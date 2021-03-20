@@ -1,0 +1,49 @@
+body {
+  font-family: 'Arial';
+}
+
+.signin {
+  display: none;
+}
+.signin_active {
+  display: block;
+}
+.control {
+  padding: 20px;
+  border-radius: 25px;
+  border: 1px solid gray;
+  width: 200px;
+  box-sizing: border-box;
+}
+
+.btn {
+  background: green;
+  color: white;
+  padding: 20px;
+  border-radius: 25px;
+  border: none;
+  display: block;
+  width: 200px;
+  box-sizing: border-box;
+  cursor: pointer;
+}
+.btn_out {
+  background: rgb(248, 6, 6);
+  color: white;
+  padding: 20px;
+  margin-top: 50px;
+  border-radius: 25px;
+  border: none;
+  display: block;
+  width: 100px;
+  box-sizing: border-box;
+  cursor: pointer;
+
+}
+.welcome {
+  display: none;
+}
+
+.welcome_active {
+  display: block;
+}
