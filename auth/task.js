@@ -7,7 +7,9 @@ const btn = document.querySelector(`#signout__btn`);
 function remove() {
     btn.addEventListener(`click`, () => {
         delete localStorage.id;
-        send();
+        welcome.classList.remove(`welcome_active`);
+        signIn.classList.add(`signin_active`);
+
     });
 }
 
@@ -15,7 +17,7 @@ function send() {
     if (localStorage.id) {
         welcome.classList.add(`welcome_active`);
         userId.textContent = localStorage.id;
-        remove();
+        
     } else {
         welcome.classList.remove(`welcome_active`);
         signIn.classList.add(`signin_active`);
@@ -37,9 +39,7 @@ function send() {
                     userId.textContent = localStorage.id;
                     remove();
                 }
-
             });
-
             xhr.send(formData);
             e.preventDefault();
             form.reset();
@@ -47,3 +47,4 @@ function send() {
     }
 }
 send();
+remove();
